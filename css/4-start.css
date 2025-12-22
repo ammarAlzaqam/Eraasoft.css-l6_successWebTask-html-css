@@ -1,0 +1,46 @@
+#start {
+  width: 100%;
+  background-color: var(--secondary);
+  padding: 5rem 0;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+
+    h2 {
+      color: white;
+    }
+
+    p {
+      color: white;
+      max-width: 760px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 1rem;
+
+      a.button:first-child {
+        background: transparent;
+        border: 2px solid white;
+        width: 250px;
+      }
+
+      a.button:nth-child(2) {
+        background: white;
+        color: var(--secondary);
+        width: 250px;
+      }
+
+      @media (max-width: 786px) {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: 1.5rem 0rem;
+  width: 100%;
+  background-color: white;
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+      width: 64px;
+    }
+
+    nav {
+      display: flex;
+      gap: 2rem;
+
+      a {
+        color: var(--secondary);
+        font-weight: 700;
+      }
+    }
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      gap: 1rem;
+
+      nav {
+        gap: 1.5rem;
+        
+        a {
+          text-align: center;
+        }
+      }
+    }
+  }
+}

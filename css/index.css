@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css");
+
+@import url("./1-header.css");
+@import url("./2-hero-sec.css");
+@import url("./3-help.css");
+@import url("./4-start.css");
+@import url("./5-value.css");
+@import url("./6-about.css");
+@import url("./7-coach.css");
+@import url("./8-consulting.css");
+@import url("./9-team.css");
+@import url("./10-brilliant.css");
+@import url("./11-contact.css");
+@import url("./12-footer.css");
+
+:root {
+  --primary: #111111;
+  --secondary: #34365a;
+  --accent: #f1bb13;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Open Sans", sans-serif;
+  color: var(--primary);
+}
+
+::selection {
+  color: var(--accent);
+  background-color: var(--primary);
+}
+
+a {
+  text-decoration: none;
+}
+
+p em a {
+  border-bottom: 1px solid var(--primary);
+}
+
+.container {
+  width: 100%;
+  max-width: 1140px;
+  height: 100%;
+  margin: 0 auto;
+
+  @media (max-width: 1200px) {
+    width: 940px;
+  }
+
+  @media (max-width: 990px) {
+    width: 720px;
+  }
+
+  @media (max-width: 768px) {
+    width: 540px;
+  }
+
+  @media (max-width: 576px) {
+    width: 340px;
+  }
+
+  @media (max-width: 400px) {
+    padding: 0 1.2rem;
+    width: 100%;
+  }
+}
+
+.button {
+  width: 192px;
+  height: 55px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: none;
+  border-radius: 32px;
+  text-transform: uppercase;
+  color: white;
+  background-color: var(--secondary);
+  font-weight: 600;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
+}
+
+.title {
+  font-size: 3rem;
+
+  @media (max-width: 768px) {
+    font-size: 2rem;
+  }
+}
+
+.card_title {
+  font-size: 30px;
+
+  @media (max-width: 768px) {
+    font-size: 24px;
+  }
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: 400;
+  color: #111111;
+}
+
+.des {
+  font-size: 20px;
+  line-height: 160%;
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  p {
+    font-size: 14px;
+  }
+}

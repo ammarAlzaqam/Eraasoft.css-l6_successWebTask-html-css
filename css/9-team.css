@@ -1,0 +1,86 @@
+#team {
+  background-color: var(--secondary);
+  padding-bottom: 25rem;
+
+  .wrapper {
+    position: relative;
+    img {
+      width: 100%;
+      aspect-ratio: 13/7;
+      object-fit: cover;
+    }
+
+    .card {
+      width: 727px;
+      padding: 40px 45px 4rem 45px;
+      background-color: white;
+      position: absolute;
+      bottom: -20rem;
+      left: 50%;
+      transform: translateX(-50%);
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+      text-align: center;
+
+      p a {
+        border-bottom: 1px solid var(--primary);
+      }
+    }
+  }
+
+  @media (max-width: 990px) {
+    padding-bottom: 30rem;
+
+    .wrapper {
+      img {
+        aspect-ratio: auto;
+      }
+
+      .card {
+        width: 595px;
+        bottom: -25rem;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding-bottom: 26rem;
+
+    .wrapper {
+      .card {
+        width: 463px;
+        bottom: -21rem;
+      }
+    }
+  }
+
+  @media (max-width: 576px) {
+    padding-bottom: 34rem;
+
+    .wrapper {
+      .card {
+        width: 340px;
+        bottom: -29rem;
+      }
+    }
+  }
+
+  @media (max-width: 400px) {
+    padding-bottom: 35rem;
+
+    .wrapper {
+      .card {
+        width: 90%;
+        bottom: -30rem;
+        padding: 35px 30px 3.5rem 30px;
+
+        p {
+          max-width: 249px;
+        }
+      }
+    }
+  }
+}
