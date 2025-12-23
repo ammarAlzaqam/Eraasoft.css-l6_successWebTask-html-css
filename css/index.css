@@ -35,6 +35,23 @@
   background-color: var(--primary);
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--accent);
+  border-radius: 20px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+::-webkit-scrollbar-track {
+  background: var(--secondary);
+}
+
 a {
   text-decoration: none;
 }
@@ -88,6 +105,18 @@ p em a {
   font-size: 1rem;
   font-weight: 600;
   letter-spacing: 1px;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: var(--primary);
+    color: white;
+  }
+
+  &:active {
+    background-color: var(--accent) !important;
+    color: var(--primary) !important;
+    border: none !important;
+  }
 
   @media (max-width: 768px) {
     font-size: 14px;
